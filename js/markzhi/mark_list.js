@@ -18,7 +18,7 @@ define(function (require, exports, module) {
 
   _.extend(this.MarkList, {
 
-    /**
+  /**
      * follow && unfollow
      */
     follow:function (mark, elem) {
@@ -59,7 +59,7 @@ define(function (require, exports, module) {
       });
     },
 
-    /**
+  /**
      * 评论, 对某个mark进行评论
      */
     comment:function (mark) {
@@ -143,7 +143,7 @@ define(function (require, exports, module) {
       dialog.show();
     },
 
-    /**
+  /**
      * remark
      */
     remark:function (mark) {
@@ -174,7 +174,7 @@ define(function (require, exports, module) {
       dialog.show();
     },
 
-    /**
+  /**
      * edit mark
      */
     edit:function (mark) {
@@ -263,7 +263,7 @@ define(function (require, exports, module) {
       dialog.show();
     },
 
-    /**
+  /**
      * clear feed
      */
     clear:function (mark, elem) {
@@ -294,7 +294,7 @@ define(function (require, exports, module) {
       });
     },
 
-    /**
+  /**
      * like
      */
     like:function (mark, elem) {
@@ -327,7 +327,7 @@ define(function (require, exports, module) {
       });
     },
 
-    /**
+  /**
      * new mark indicator
      */
     indicator:function () {
@@ -403,7 +403,6 @@ define(function (require, exports, module) {
           action && self[action](mark, elem);
         }
       });
-
 
     }
   });

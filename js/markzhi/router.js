@@ -85,5 +85,5 @@ define(function(require, exports) {
   require.async('./head');
   require.async('./ga');
 
-    if (window['FXL_IE6'])  require.async('./ie6');
+  if (window['FXL_IE6'])  require.async('./ie6');
 });

@@ -7,10 +7,10 @@ define(["jquery"], function(require, exports, module) {
     var _id_counter = 0,
 
 
-        /**
+    /**
          * 所有自定义事件列表
          */
-            EVENT_LIST = {
+        EVENT_LIST = {
             "CENTER": "center",
             "BEFORESHOW": "beforeShow",
             "SHOW": "show",
@@ -36,7 +36,7 @@ define(["jquery"], function(require, exports, module) {
 
         self._createHTML();
 
-        /*$(this).bind('show', function(evt) {
+    /*$(this).bind('show', function(evt) {
          $(document.body).keyup(function(evt) {
          if (27 === evt.keyCode && 200 === self._status) {
          self.hide();
@@ -54,20 +54,20 @@ define(["jquery"], function(require, exports, module) {
 
     mix(Dialog.prototype, {
 
-        /*
+    /*
          * 内部状态码 400为hide, 200为show
          *
          * */
         _status: 400,
 
-        /**
+    /**
          * isShow
          */
         isShow: function() {
             return this._status === 200;
         },
 
-        /**
+    /**
          * width
          */
         width: function( px ) {
@@ -77,7 +77,7 @@ define(["jquery"], function(require, exports, module) {
             return self;
         },
 
-        /**
+    /**
          * 居中 return this
          */
         center: function() {
@@ -93,7 +93,7 @@ define(["jquery"], function(require, exports, module) {
             return self;
         },
 
-        /**
+    /**
          * setHeader
          */
         head: function(str) {
@@ -101,7 +101,7 @@ define(["jquery"], function(require, exports, module) {
             elem.html(str);
             return self;
         },
-        /**
+    /**
          * setbody
          */
         body: function(str) {
@@ -110,7 +110,7 @@ define(["jquery"], function(require, exports, module) {
             return self;
         },
 
-        /**
+    /**
          * show
          */
         show: function() {
@@ -137,7 +137,7 @@ define(["jquery"], function(require, exports, module) {
             return self;
         },
 
-        /**
+    /**
          * hide
          */
         hide: function() {
